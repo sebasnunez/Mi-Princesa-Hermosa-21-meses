@@ -16,7 +16,7 @@ function inicio(){
     var dd = today.getDate();
     var mm = today.getMonth() + 1; //January is 0!
     var yyyy = today.getFullYear();
-    if(yyyy==2022){
+    if(yyyy==2021){
         if(dd>=11&&mm>=11){
             empezar();
         }
