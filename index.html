@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="./Resources/Images/icono.png" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+    <script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
+    <script src="./index.js"></script>
+    <title>Te amo #11 ♥</title>
+</head>
+<body onload="inicio()">
+    <a-scene >
+        <a-assets>
+            <img src="./Resources/Images/1635004179846.jpg" id="c1">
+            <img src="./Resources/Images/0c4a604e156f13ad2527cd144458519f.png" id="b1">
+            <img src="./Resources/Images/icon-next-25.jpg" id="b2">
+            <img src="./Resources/Images/0005.gif" id="wait">
+        </a-assets>
+        <a-circle id="boton1" visible="false" src="#b1" position="0 0 -5" radius="1"></a-circle>
+        <a-circle id="boton2" visible="false" src="#b2" onclick="toModel()" position="0 0 -5" radius="1"></a-circle>
+        <a-plane id="esperando" visible="false" src="#wait" position="0 1.5 -10" material="shader:gif;" scale="11 11 11"></a-plane>
+        <a-camera>
+            <a-cursor color="white"></a-cursor>
+            <a-text visible="false" value="Lo siento aun no es el dia, debes esperar hasta el 11/11/2021 para poder ver el contenido, te amo mi chiquilina"
+            height="10" width="10"anchor="align" wrap-count="20" align="center" color="black" position="0 0 -5" id="textoEspera"></a-text>
+            <a-text value="Mi Princesa quiero agradecerte por tanto que me has dado, eres extremadamente especial para mi, eres mi bendicion sin duda tu me has llenado de alegria como no te imaginas, siendo sincero, mi vida no es que haya sido dura o triste, en general siempre he sido feliz, pero tu me has regalado una felicidad unica que nunca antes habia tenido, es una felicidad que me hace pensar constantemente que todo estara bien, tu me das esa fuerza para seguir adelante, me das paz, calma, una sensacion de que nunca mas volvere a estar triste, siempre sere la persona mas feliz del mundo, y todo gracias a ti, despues de todo este tiempo juntos sigo pensando y con mucha mas fuerza de que tu eres la clave de mi felicidad, te amo como nunca, de verdad jamas llegue a amar tanto a alguien como a ti, gracias por decirme que si, ese primer dia hiciste de este muchacho normalito, el hombre mas feliz de todos te amooooooo, felices 20 meses mi bebe chiquilina peshosha
+            #11 <3"
+            height="20" id="texto" visible="false" width="20"anchor="align" wrap-count="20" align="center" color="pink" position="0 -52 -10" animation="property: position; to: 0 52 -10; dur: 80000; easing: linear; autoplay:false;"></a-text>
+            
+        </a-camera>
+        <a-sky scale ="0.2 0.2 0.2" rotation="0 92 0" color="pink" id="cielo"></a-sky>
+    </a-scene>
+
+</body>
+</html>
