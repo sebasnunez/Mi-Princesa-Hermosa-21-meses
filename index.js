@@ -39,6 +39,8 @@ function regresar(){
 }
 
 function empezar(){
+    var camara = document.getElementById('cam');
+    camara.setAttribute('sound', 'src: #s1; autoplay: true');
     var textoEspera = document.getElementById('textoEspera');
     padre1 = textoEspera.parentNode;
     padre1.removeChild(textoEspera);
